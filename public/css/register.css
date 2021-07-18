@@ -1,0 +1,63 @@
+body {
+    background-color: #ebebeb;
+}
+
+body form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+body form input {
+    border: none;
+    border-radius: 5px;
+    color:darkgray;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    height: 30px;
+    padding-left: 10px;
+    width: 90%;
+}
+
+body form h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -10px;
+    margin-left: -46%;
+}
+
+body form .radio-btn {
+    align-items: center;
+    border: solid 3px green;
+    display: flex;
+    font-size: 18px;
+    justify-content: left;
+    width: 90%;
+}
+
+body section h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+}
+
+body section div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body .section-2 .intereses {
+    display: flex;
+    flex-direction: column;
+}
+
+body .section-2 .intereses .check {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+body .section-2 .intereses .check label {
+    margin-left: 10px;
+}

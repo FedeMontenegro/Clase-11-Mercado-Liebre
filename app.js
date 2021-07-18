@@ -10,4 +10,12 @@ app.get("/", (req, res) =>{
     res.sendFile(path.join(__dirname, "/views/home.html"));
 });
 
+app.get("/register.html", (req, res) =>{
+    res.sendFile(path.join(__dirname, "/views/register.html"));
+});
+
+app.get("/login.html", (req, res) =>{
+    res.sendFile(path.join(__dirname, "/views/login.html"));
+});
+
 app.listen(port, () => console.log(`Port running in ${port}\nAbrir en el navegador http://localhost:${port}`));

@@ -1,5 +1,23 @@
 /* HEADER */
-header .burger-menu {
+
+.header-home {
+    background-color: var(--color-amarillo);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.header-home .div-header-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 360px;
+    padding-top: 10px;
+}
+
+.header-home .burger-menu {
     text-align: center;
     background-color: var(--color-celeste);
     padding: 7px;
@@ -12,64 +30,90 @@ header .burger-menu {
     padding-top: 8px;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: var(--color-amarillo);
-    padding-bottom: 20px;
-    padding-top: 10px;
-}
-
-header .logo {
-    width: 130px;
+.header-home .div-header-home .logo {
+    animation: zoom 1s ease-in 1 alternate-reverse;
+    width: 200px;
     margin-left: 25px;
     padding-top: 20px;
     margin-bottom: 15px;
 }
 
-header nav #top-list {
-    font-size: 14px;
+@keyframes zoom {
+    100% {transform: scale(0.5);}
 }
 
-header nav #top-list li {
+.header-home .div-header-home nav #top-list {
+    font-size: 16px;
+}
+
+.header-home .div-header-home nav #top-list li {
     margin: 0 15px;
 }
 
-header p {
-    font-size: 24px;
+.header-home .div-header-home p {
+    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.main-header-top-bar {
+.header-home .div-header-home .main-header-top-bar {
     margin: 0 10px 0 10px;
 }
 
-header div button {
-    flex-wrap: wrap;
-    align-self: flex-start;
-    margin-top: 1px;
+.header-home .div-header-home .main-header-top-bar .ml-15 {
+    display: none;
+    margin-left: 15px;
+    position: relative;
+    text-align: center;
+    width: 355px;
 }
 
-#top-list {
-    margin-bottom: 10px;
+.header-home .div-header-home .main-header-top-bar .ml-15 input {
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+    width: 350px;
 }
 
-a {
+.header-home .div-header-home .main-header-top-bar .ml-15 .ml-15-search {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    height: 26px;
+    position: absolute;
+    right: 2px;
+    top: 1px;
+    width: 30px;
+}
+
+.header-home .div-header-home .main-navbar #top-list {
+    margin-top: 5px;
+}
+
+.header-home .div-header-home a {
     text-decoration: none;
     color: black;
 }
 
-li {
+.header-home .div-header-home li {
     list-style: none;
 }
 
-header .main-navbar {
+.header-home .div-header-home .main-navbar {
     display: none;
-    margin: 0 10px 0 10px;
-    
+    margin: 10px;
+}
+
+/* ---------------------------------------- */
+
+/* Main */
+
+.main-home {
+    position: relative;
+    top: 202px;
+    text-align: center;
 }
 
 /* MEDIA QUERIES */
@@ -78,30 +122,45 @@ header .main-navbar {
 
 @media (min-width: 768px) {
     /* Header */
+    .header-home .div-header-home {
+        max-width: none;
+    }
     .banner {
         display: block;
     }
-
-    .main-header-top-bar,header .main-navbar{
+    .header-home .div-header-home .main-header-top-bar, .header-home .div-header-home .main-navbar {
         align-items: center;
         display: flex;
         justify-content: space-between;
     }
-    header nav #top-list {
+    .header-home .div-header-home nav #top-list {
         display: flex;
     }
-    header .burger-menu {
+    .header-home .div-header-home .burger-menu {
         display: none;
+    }
+    .search {
+        align-items: center;
+        display: flex;
+        width: 40%;
+    }
+    /* ---------------------------------------- */
+    /* Main */
+    .main-home {
+        text-align: left;
     }
 }
 
 /* Desktop */
 
 @media (min-width: 1200px) {
-    .main-header-top-bar, .main-navbar {
+    .header-home .div-header-home .main-header-top-bar .ml-15 {
+        display: block;
+    }
+    .header-home .div-header-home .main-header-top-bar, .main-navbar {
         max-width: 1200px;
     }
-    .main-header-top-bar .logo {
+    .header-home .div-header-home .main-header-top-bar .logo {
         width: 250px;
     }
 }
