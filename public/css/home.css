@@ -3,7 +3,7 @@
 .main-home {
     font-family: var(--font-roboto);
     background-color: var(--color-grisClaro);
-    margin: auto;
+    margin: 100px auto 250px;
     width: 90vw;
 }
 
@@ -17,26 +17,26 @@
     100% {transform: scale(0.98);}
 }
 
-.main-home .section-1 {
+.main-home .section-1-home {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.main-home .section-1 article {
+.main-home .section-1-home article {
     background-color: white;
     border-top: solid 1px var(--color-grisClaro);
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
     max-width: 340px;
     padding: 15px;
     position: relative;
 }
 
-.main-home .section-1 article .card-content {
+.main-home .section-1-home article .card-content {
     border-top: 1px solid var(--color-grisClaro);
 }
 
-.main-home .section-1 article .card-content .icon-truck {
+.main-home .section-1-home article .card-content .icon-truck {
     background-color: white;
     border: solid 1px var(--color-verde);
     border-radius: 50%;
@@ -48,13 +48,13 @@
     width: fit-content;
 }
 
-.main-home .section-1 article .card-content .datos {
+.main-home .section-1-home article .card-content .datos {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     width: 120px;
 }
-.main-home .section-1 article .card-content .desc-card {
+.main-home .section-1-home article .card-content .desc-card {
     align-items: center;
     background-color: rgba(0, 0, 0);
     bottom: 0;
@@ -72,11 +72,11 @@
     width: 100%;
 }
 
-.main-home .section-1 article .card-content .desc-card:hover {
+.main-home .section-1-home article .card-content .desc-card:hover {
     opacity: 0.8;
 }
 
-.main-home .section-1 article .card-content .datos :last-child {
+.main-home .section-1-home article .card-content .datos :last-child {
     align-items: flex-end;
     display: flex;
     color: var(--color-verde);
@@ -88,7 +88,7 @@
         display: block;
     }
     
-    .main-home .section-1 article {
+    .main-home .section-1-home article {
         width: 260px;
     }
 }
