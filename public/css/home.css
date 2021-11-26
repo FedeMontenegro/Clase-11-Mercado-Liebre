@@ -84,6 +84,10 @@
 }
 
 @media (min-width : 768px){
+    .main-home {
+        margin-top: 0;
+    }
+
     .main-home .banner {
         display: block;
     }
