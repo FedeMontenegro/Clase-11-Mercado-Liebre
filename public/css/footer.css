@@ -2,7 +2,7 @@
 footer {
     font-family: var(--font-roboto);
     text-align: center;
-    margin-top: 202px;
+    margin-top: 102px;
     padding-top: 50px;
     background-color: white;
     
@@ -15,8 +15,11 @@ footer {
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px auto;
+}
+
+.footer-icons i {
+    margin: 0 auto;
 }
 
 #copy {

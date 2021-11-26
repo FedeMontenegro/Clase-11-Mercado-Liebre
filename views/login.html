@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 
@@ -14,40 +14,40 @@
 </head>
 
 <body>
-    <header>
-        <div class="main-header-top-bar">
-            <div class="logo"><img src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre"></div>
-
-            <div class="search">
+    <header class="header-home">
+        <div class="div-header-home">
+            <div class="main-header-top-bar">
+                <div class="logo"><img src="/img/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre"></div>
                 <div class="ml-15">
                     <input type="search" placeholder="Buscar productos, marcas">
+                    <button class="ml-15-search"><i class="fas fa-search"></i></button>
                 </div>
-                <button class="lupa"><i class="fas fa-search"></i></button>
+                <p> <i class="fas fa-hand-holding-usd"> Comprá en cuotas y sin tarjeta de crédito</i></p>
             </div>
-            <p> <i class="fas fa-hand-holding-usd">Comprá en cuotas y sin tarjeta de crédito</i></p>
-        </div>
 
-        <nav class="main-navbar">
-            <ul id="top-list">
-                <li><a href="">Ofertas</a></li>
-                <li><a href="">Tiendas Oficiales</a></li>
-                <li><a href="">Vender</a></li>
-                <li><a href="">Ayuda</a></li>
-            </ul>
-            <ul id="top-list">
-                <li><a href="register.html">Creá tu cuenta</a><i class="far fa-address-card "></i></i>
-                </li>
-                <li><a href="login.html">Ingresá</a><i class="fas fa-sign-in-alt "></i></i>
-                </li>
-                <li><a href="">Mis compras</a><i class="fas fa-shopping-basket "></i></li>
-            </ul>
-        </nav>
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
+            <nav class="main-navbar">
+                <ul id="top-list">
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas Oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+                <ul id="top-list">
+                    <li><a href="register.html">Creá tu cuenta </a><i class="far fa-address-card "></i></i>
+                    </li>
+                    <li><a href="login.html">Ingresá </a><i class="fas fa-sign-in-alt "></i></i>
+                    </li>
+                    <li><a href="">Mis compras </a><i class="fas fa-shopping-basket "></i></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
     <!-- Body -->
-    <form action="/login" method="POST">
+    <form class="form-login" action="/login" method="POST">
+        <h1>Login</h1>
         <div class="campos-login">
             <input type="text" name="user-name" id="user-name" value="Nombre de usuario">
             <input type="password" name="password" id="password" value="Contraseña">
